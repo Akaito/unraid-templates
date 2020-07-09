@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+    <TemplateURL></TemplateURL>
+    <Beta>True</Beta>
+    <Category>Network:Other</Category>
+    <Changes>
+[font size=3]2020.07.09[/font]
+- Initial version.
+    </Changes>
+
+
+    <Name>Rsyslog</Name>
+    <Description>
+    Rsyslog server with the intent of forwarding RFC 3164 logs to a more modern service.  Such as Telegraf Influx.
+    </Description>
+    <!-- <Registry>https://registry.hub.docker.com/u/codesaru/route53-updater/</Registry> -->
+    <Registry>https://hub.docker.com/r/rsyslog/syslog_appliance_alpine/</Registry>
+    <Repository>codesaru/unraid-templates</Repository>
+    <BindTime>true</BindTime>
+    <Privileged>false</Privileged>
+    <Environment>
+        <Variable>
+            <Name>TZ</Name>
+            <Value>UTC</Value>
+        </Variable>
+        <Variable>
+            <Name>RSYSLOG_CONF</Name>
+            <Value>/etc/rsyslog.conf</Name>
+        </Variable>
+    </Environment>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+    </Networking>
+    <Data/>
+    <WebUI/>
+    <Icon/>
+    <ExtraParams></ExtraParams>
+</Container>
+
