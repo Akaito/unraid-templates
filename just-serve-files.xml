@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+    <TemplateURL></TemplateURL>
+    <Beta>True</Beta>
+    <Category>Network:Other</Category>
+    <Changes>
+[font size=3]2020.07.20[/font]
+- Initial version.
+    </Changes>
+
+
+    <Name>justservefiles</Name>
+    <Description>
+        Super-simple HTTP file server to just host some files.<br/>
+        Pair with something like Syncthing managing the files for easy public sharing of files.
+    </Description>
+    <!-- <Registry>https://registry.hub.docker.com/u/codesaru/route53-updater/</Registry> -->
+    <!-- <Registry>https://hub.docker.com/r/rsyslog/syslog_appliance_alpine/</Registry> -->
+    <Repository>codesaru/unraid-templates</Repository>
+    <BindTime>true</BindTime>
+    <Privileged>false</Privileged>
+    <Environment>
+    </Environment>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+    </Networking>
+    <Data/>
+    <WebUI/>
+    <Icon/>
+    <ExtraParams></ExtraParams>
+</Container>
+
